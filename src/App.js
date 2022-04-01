@@ -4,17 +4,17 @@ import {useEffect,useState} from 'react'
 function App() {
     return (
     <div className="App">
-      <Phonelist/>
-      
+      <Phonelist/>      
     </div>
   );
 }
-
+//API="http://localhost:3000/"
+API="https://ecommerce31march.herokuapp.com"
 function Phonelist(){
   const [mobiles,setMobiles] = useState([]);
   
   useEffect(()=>{
-    fetch('http://localhost:4000/mobiles')
+    fetch(`${API}/mobiles`)
   .then(data=>data.json())
   //.then(mbs=>console.log(mbs))
   .then(mbs=>setMobiles(mbs))
