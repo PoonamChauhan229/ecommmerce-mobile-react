@@ -8,8 +8,8 @@ function App() {
     </div>
   );
 }
-//API="http://localhost:3000/"
-API="https://ecommerce31march.herokuapp.com"
+//var API="http://localhost:3000/"
+var API="https://ecommerce31march.herokuapp.com"
 function Phonelist(){
   const [mobiles,setMobiles] = useState([]);
   
